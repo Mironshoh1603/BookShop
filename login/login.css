@@ -1,0 +1,134 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Vollkorn", serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button:focus {
+  outline: none;
+}
+/* Header Styling */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container {
+  width: 90%;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* main styles */
+main {
+  height: 600px;
+  margin-top: 2rem;
+}
+
+main .form-header {
+  display: flex;
+  flex-direction: column;
+}
+main .form-header * {
+  margin: 10px 0;
+  text-align: center;
+}
+main .form-header h2 {
+  color: cornflowerblue;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+form * {
+  margin: 1rem 0;
+}
+form label {
+  margin: 10px 0;
+}
+form input {
+  padding: 12px 20px;
+}
+
+form button {
+  background-color: #4caf50;
+  height: 41px;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form button a {
+  color: white;
+}
+.msg-error {
+  text-align: center;
+  color: crimson;
+  margin: 10px 0;
+}
+/* Footer styling */
+footer {
+  height: 50px;
+  background-color: #202020;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer h5,
+.icons {
+  margin: 0 10px;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+}
+
+/* Media Queries */
+
+@media (max-width: 550px) {
+  footer {
+    height: 100px;
+    flex-direction: column;
+  }
+
+  footer .icons {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  main .form-header {
+    width: 95%;
+  }
+}
